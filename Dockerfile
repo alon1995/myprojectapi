@@ -9,4 +9,4 @@ RUN pip install Django psycopg2-binary djangorestframework django-cors-headers
 
 COPY . .
 
-CMD python manage.py runserver 0.0.0.0:8001
+CMD python manage.py runserver 0.0.0.0:8000
