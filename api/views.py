@@ -22,8 +22,9 @@ def getDishes(request):
         return Response({'error': 'Category ID is missing'}, status=400)
 
     try:
-        dishes = Dish.objects.filter(category_id=category_id).values()
-        return Response({'dishes': list(dishes)}, status=200)
+        dishes = Dish.objects.filter(category_id=category_id)
+        serializer = DishSerializer(dishes, many=True)
+        return Response({'dishes': serializer.data}, status=200)
 
     except Dish.DoesNotExist:
         return Response({'error': 'No dishes found for the given category ID'}, status=404)

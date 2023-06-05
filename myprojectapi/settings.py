@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%6up-(*nxxf#x#n$qrqh8ptmg9!b=)lvs*(%j!%wcy(pr*%v=5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myprojectapi.blacktree-6e79657f.germanywestcentral.azurecontainerapps.io','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['projectapi.blacktree-6e79657f.germanywestcentral.azurecontainerapps.io','127.0.0.1','localhost']
 
 
 # Application definition
