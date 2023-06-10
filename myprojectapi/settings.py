@@ -45,7 +45,8 @@ INSTALLED_APPS = [
 
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://reactfront.blacktree-6e79657f.germanywestcentral.azurecontainerapps.io"
 ]
 
 MIDDLEWARE = [
